@@ -26,6 +26,7 @@
   "dependencies": {
     "compromise": "^11.8.0",
     "fontfaceobserver": "^2.0.13",
-    "phaser": "^3.3.0"
+    "phaser": "^3.3.0",
+    "redux": "^4.0.0"
   }
 }
