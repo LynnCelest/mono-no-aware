@@ -6,8 +6,20 @@ const itemsArr = [
     { id: 'sake', name: 'Jug of Sake', description: 'Glug glug glug!', image: 'Sake.png', scale: 0.5 },
     { id: 'calligraphyBrush', name: 'Calligraphy Brush', description: 'A stroke of genius.', image: 'CalligraphyBrushSmall.png' },
     { id: 'inari', name: 'inari tofu roll', description: 'Delicious!' },
-    { id: 'sidetable2', name: 'side table', description: 'You can keep your things here!'}
+
 ];
+
+const clothingArr = [
+
+]
+
+const bgItemArr = [
+    { id: 'sidetable2', name: 'side table', description: 'You can keep your things here!'},
+]
+
+const scrollFragmentArr = [
+    { id: 'scroll1_'}
+]
 
 // map items array to object
 let items = {};
