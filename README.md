@@ -1,17 +1,13 @@
-# Phaser 3 Webpack Project Template
+# About
 
-A Phaser 3 Project Template
+Mono-no-Aware is an adventure game.
 
-### Requirements
+See a live demo at http://fwoozy.com/mono
 
-We need [Node.js](https://nodejs.org) to install and run scripts.
+Explore ancient Japan and save the Empress from the forces of darkness!
 
-## Install and run
+# How to Build
 
-Run next commands in your terminal:
+npm i
 
-| Command | Description |
-|---------|-------------|
-| `npm install` | Install dependencies and launch browser with examples.|
-| `npm start` | Launch browser to show the examples. <br> Press `Ctrl + c` to kill **http-server** process. |
-=======
+npm start
