@@ -34,6 +34,9 @@ export default class EmpressBedroom extends GameScene {
             y: 370,
             key: 'empress'
         });
+        console.log(this.emp.body)
+        this.emp.body.offset.y -= 50;
+        this.emp.body.offset.x += 50;
         // this.emp.angle = 28;
         // this.emp.body.angle = 28;
         // this.emp.body.immovable = true;
@@ -97,6 +100,10 @@ export default class EmpressBedroom extends GameScene {
 
         this.physics.add.overlap(this.protag, this.room2Door, this.changeRoom2)
         this.physics.add.overlap(this.protag, this.room4Door, this.changeRoom4)
+
+        this.r1To2Tri = this.add.image(400, 100, 'yTriangle');
+        this.r1To4Tri = this.add.image(950, 550, 'yTriangle');
+        
     }
 
     create() {

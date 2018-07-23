@@ -145,6 +145,10 @@ export default class Room2 extends GameScene {
         this.physics.world.enable(this.room3Door)
         this.room3Door.body.immovable = true;
 
+        this.r2To1Tri = this.add.image(1025, 480, 'yTriangle');
+        this.r2To3Tri = this.add.image(380, 50, 'yTriangle');
+        this.r2To3Tri.depth = 1000;
+
         //Camera setup
         this.setCameras();
 

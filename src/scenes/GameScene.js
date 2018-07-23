@@ -20,8 +20,9 @@ export default class GameScene extends Scene {
         this.load.audio('theme', 'assets/audio/theme.m4a')
         this.load.audio('wind', 'assets/audio/wind.m4a')
 
-        //hud
+        //interaction
         this.load.image('triangle', 'assets/greenTriangle.png');
+        this.load.image('yTriangle', 'assets/yellowTriangle.png');
 
         //protags
         this.load.image('protag', 'assets/images/characters/protag.png')

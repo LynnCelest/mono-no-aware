@@ -88,6 +88,9 @@ export default class Room3 extends GameScene {
         this.physics.world.enable(this.room4Door)
         this.room2Door.body.immovable = true;
 
+        this.r3To2Tri = this.add.image(820, 400, 'yTriangle');
+        this.r3To4Tri = this.add.image(50, 500, 'yTriangle');
+
         // console.log(this.room2Door)
         // let checkMotion = () => {
         //     if (this.cursors.right.isDown) {
