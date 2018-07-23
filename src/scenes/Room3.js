@@ -80,7 +80,7 @@ export default class Room3 extends GameScene {
         this.cameras.main.startFollow(this.protag)
         this.cameras.main.setBounds(0, 0, this.groundLayer.width, this.groundLayer.height)
 
-        this.room2Door = this.add.zone(800, 0, 50, 800).setName('room2Door').setInteractive();
+        this.room2Door = this.add.zone(880, 0, 50, 800).setName('room2Door').setInteractive();
         this.physics.world.enable(this.room2Door)
         this.room2Door.body.immovable = true;
 
@@ -88,8 +88,8 @@ export default class Room3 extends GameScene {
         this.physics.world.enable(this.room4Door)
         this.room2Door.body.immovable = true;
 
-        this.r3To2Tri = this.add.image(820, 400, 'yTriangle');
-        this.r3To4Tri = this.add.image(50, 500, 'yTriangle');
+        this.r3To2Tri = this.add.image(860, 450, 'yTriangle');
+        this.r3To4Tri = this.add.image(40, 500, 'yTriangle');
 
         // console.log(this.room2Door)
         // let checkMotion = () => {

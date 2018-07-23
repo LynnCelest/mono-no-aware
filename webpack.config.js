@@ -8,17 +8,17 @@ module.exports = {
     entry: './src/index.js',
 
     output: {
-        path: path.resolve(__dirname, 'build'),
-        publicPath: '/build/',
+        path: path.resolve(__dirname, 'public'),
+        publicPath: '/public/',
         filename: 'project.bundle.js'
     },
 
     module: {
         rules: [
-          {
-            test: [ /\.vert$/, /\.frag$/ ],
-            use: 'raw-loader'
-          }
+            {
+                test: [ /\.vert$/, /\.frag$/ ],
+                use: 'raw-loader'
+            }
         ]
     },
 
@@ -30,3 +30,8 @@ module.exports = {
     ]
 
 };
+
+/*{ 
+    test: /\.(jpg|png|xml|mp3|ogg|m4a|fnt|ac3)$/,
+    loader: 'file-loader?name=assets/[hash].[ext]' 
+}*/

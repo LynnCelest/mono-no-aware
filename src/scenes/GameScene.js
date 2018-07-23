@@ -321,16 +321,16 @@ export default class GameScene extends Scene {
         //if you're not in conversation mode, the keys control the protagonist
         if (!store.getDialogue() && !store.getInventoryActive() && !store.getInteractionActive()) {
             if (this.cursors.left.isDown) {
-                velX = -120;
+                velX = -135;
             }
             else if (this.cursors.right.isDown) {
-                velX = 120;
+                velX = 135;
             }
             else if (this.cursors.up.isDown) {
-                velY = -120;
+                velY = -135;
             }
             else if (this.cursors.down.isDown) {
-                velY = 120;
+                velY = 135;
             }
             if (this.cursors.space.isDown) {//inventory was changed to space, and interact to enter
                 if (this.stateChangeSpaceKeyReleased) {

@@ -20,8 +20,11 @@ export default class Room4 extends GameScene {
         this.bookshelf = this.behinders.create(264, 282, 'bookshelf');
         this.background.create(575, 415, 'bed');
         this.background.create(1010, 555, 'GoBoard');
-        this.background.create(334, 350, 'screen-top');
-        this.behinders.create(492, 350, 'screen-bottom');
+        this.screenTop = this.background.create(334, 350, 'screen-top');
+        this.screenBottom = this.behinders.create(492, 350, 'screen-bottom');
+
+        //this.screenTop.depth = -1000;
+        this.screenBottom.depth = 2000
         
         //smoke
 
@@ -62,14 +65,29 @@ export default class Room4 extends GameScene {
             child.body.y = child.y + (child.height / 2) - 40
         })
 
-        /*this.bookshelf.body.height = 285;
-        this.bookshelf.body.width = 75;//150 for full shelf width I think
+        this.bookshelf.body.height = 260;
+        this.bookshelf.body.width = 1200;
 
         this.bookshelf.body.position = { 
-            x: this.bookshelf.x - (this.bookshelf.texture.source[0].width / 2),
+            x: 0,
             y: this.bookshelf.y - (this.bookshelf.texture.source[0].height / 2)
         }
-        this.bookshelf.depth -= 50;//just experimenting here*/
+
+        this.screenTop.body.height = 100
+        this.screenTop.body.width = 10
+        this.screenTop.body.position = {
+            x: this.bookshelf.x - 75,
+            y: this.bookshelf.y - 20
+        }
+
+        this.screenBottom.body.height = 100
+        this.screenBottom.body.width = 10
+        this.screenBottom.body.position = {
+            x: this.bookshelf.x - 25,
+            y: this.bookshelf.y + 100
+        }
+
+        //this.bookshelf.depth -= 50;//just experimenting here
 
         //Camera setup
         this.cameras.main.startFollow(this.protag)
