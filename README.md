@@ -1,7 +1,6 @@
 # Mono-No-Aware
 
-Mono No Aware
-May 2018 | See Live Demo at:  https://elejy.herokuapp.com/
+Mono No Aware | Team Developer | May 2018 | See Live Demo at:  https://elejy.herokuapp.com/
 
 Web Game where the player can walk & converse with scripted characters.
 
