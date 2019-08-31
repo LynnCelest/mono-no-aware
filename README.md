@@ -1,10 +1,15 @@
-# About
+# Mono-No-Aware
 
-Mono-no-Aware is an adventure game.
+Mono No Aware
+May 2018 | See Live Demo at:  https://elejy.herokuapp.com/
 
-See a live demo at http://elejy.herokuapp.com/
+Project descriptionWeb Game where the player can walk & converse with scripted characters.
 
-Explore ancient Japan and save the Empress from the forces of darkness!
+● Developed with Node.js, Express, Webpack, & Phaser.
+
+● Accomplished player movement & transitioning that loops across different game scenes via Phaser 3.
+
+● Implemented Item Interaction by switching a bool with timed signals whenever inside of an interactable zone via Phaser 3.
 
 # How to Build
 
