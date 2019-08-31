@@ -3,7 +3,7 @@
 Mono No Aware
 May 2018 | See Live Demo at:  https://elejy.herokuapp.com/
 
-Project descriptionWeb Game where the player can walk & converse with scripted characters.
+Web Game where the player can walk & converse with scripted characters.
 
 ● Developed with Node.js, Express, Webpack, & Phaser.
 
